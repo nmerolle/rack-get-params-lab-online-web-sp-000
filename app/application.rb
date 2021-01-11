@@ -17,8 +17,8 @@ class Application
 			else
 				@@cart.each do |item|
 	        resp.write "#{item}\n"
-	      end
-			end
+	     end
+		end
 		elsif req.path.match(/add/)
 			item = req.params["item"]
 			if 	@@items.include?(item)
@@ -27,3 +27,5 @@ class Application
 			else
 				resp.write "We don't have that item"
 			end
+		
+end
