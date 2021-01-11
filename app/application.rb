@@ -8,4 +8,4 @@ class Application
 	  
 	  @@items.each do |item|
 	    resp.write "#{item}\n"
-	    
+	  end
