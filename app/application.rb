@@ -7,4 +7,5 @@ class Application
 	  resp = Rack::Response.new
 	  
 	  @@items.each do |item|
+	    resp.write "#{item}\n"
 	    
