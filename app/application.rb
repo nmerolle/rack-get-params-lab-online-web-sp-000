@@ -28,4 +28,3 @@ class Application
 				resp.write "We don't have that item"
 			end
 		
-end
